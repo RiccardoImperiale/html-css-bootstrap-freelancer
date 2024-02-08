@@ -10,6 +10,7 @@
 
     <style>
         .debug {
+
             .container {
                 border: 1px dashed;
             }
@@ -40,6 +41,19 @@
                     height: 200px;
                 }
             }
+
+            .portfolio {
+                .col {
+                    /* border: 1px dashed; */
+                    height: 200px;
+
+                    & .card {
+                        background-color: blueviolet;
+                        height: 100%;
+                    }
+                }
+            }
+
         }
     </style>
 
@@ -64,6 +78,7 @@
             <div class="hero_image rounded-circle bg-primary m-auto">
             </div>
             <div class="hero_text text-center bg-info mt-3">
+                <h1>START BOOTSTRAP</h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut delectus eum, molestias, earum natus
                 eaque eligendi, labore nobis soluta impedit ratione incidunt voluptatum molestiae magnam optio?
                 Corrupti, itaque eos.
@@ -71,7 +86,45 @@
         </div>
     </section>
     <!-- Portfolio section -->
-    <section class="portfolio"></section>
+    <section class="portfolio py-5">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2>PORTFOLIO</h2>
+            </div>
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3 ">
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- About section -->
     <section class="about"></section>
     <!-- Contact section -->
