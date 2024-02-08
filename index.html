@@ -10,10 +10,18 @@
 
     <style>
         .debug {
+            .container {
+                border: 1px dashed;
+            }
+
             & header {
                 height: 70px;
                 border: 1px dashed;
                 background-color: rgb(28, 67, 89);
+
+                [class^="col"] {
+                    border: 1px dashed;
+                }
             }
 
             & section {
@@ -21,8 +29,16 @@
             }
 
             .hero {
-                height: 500px;
                 background-color: rgb(55, 201, 155);
+
+                .container div {
+                    border: 1px dashed;
+                }
+
+                .hero_image {
+                    width: 200px;
+                    height: 200px;
+                }
             }
         }
     </style>
@@ -30,9 +46,30 @@
 </head>
 
 <body class="debug">
-    <header></header>
+    <header class="d-flex align-items-center px-2">
+        <div class="container bg-primary">
+            <div class="row">
+                <div class="col-8">
+                    Start Bootstrap
+                </div>
+                <div class="col-4">
+                    links
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Hero section -->
-    <section class="hero"></section>
+    <section class="hero py-5">
+        <div class="container">
+            <div class="hero_image rounded-circle bg-primary m-auto">
+            </div>
+            <div class="hero_text text-center bg-info mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut delectus eum, molestias, earum natus
+                eaque eligendi, labore nobis soluta impedit ratione incidunt voluptatum molestiae magnam optio?
+                Corrupti, itaque eos.
+            </div>
+        </div>
+    </section>
     <!-- Portfolio section -->
     <section class="portfolio"></section>
     <!-- About section -->
