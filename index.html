@@ -19,11 +19,12 @@
 
             & header {
                 height: 70px;
-                border: 1px dashed;
+                /* border: 1px dashed; */
                 background-color: rgb(28, 67, 89);
 
                 [class^="col"] {
                     border: 1px dashed;
+                    background-color: aqua;
                 }
             }
 
@@ -35,7 +36,7 @@
                 background-color: rgb(55, 201, 155);
 
                 .container div {
-                    border: 1px dashed;
+                    border: 1px dashed black;
                 }
 
                 .hero_image {
@@ -58,10 +59,22 @@
 
             .about {
                 background-color: rgb(55, 201, 155);
-                height: 500px;
 
+                /* height: 500px; */
+                .col-12 {
+
+                    /* border: 1px dashed; */
+                    /* height: 200px; */
+                    & p {
+                        background-color: blueviolet;
+                    }
+                }
             }
 
+            & form {
+                height: 200px;
+                background-color: blueviolet;
+            }
         }
     </style>
 
@@ -69,7 +82,7 @@
 
 <body class="debug">
     <header class="d-flex align-items-center px-2">
-        <div class="container bg-primary">
+        <div class="container">
             <div class="row">
                 <div class="col-8">
                     Start Bootstrap
@@ -83,14 +96,14 @@
     <!-- Hero section -->
     <section class="hero py-5">
         <div class="container">
-            <div class="hero_image rounded-circle bg-primary m-auto">
+            <div class="hero_image rounded-circle m-auto">
             </div>
             <div class="hero_text text-center mt-3 text-white">
                 <h1>START BOOTSTRAP</h1>
                 <div class="line_star d-flex align-items-center justify-content-center">
-                    <hr width="80" class="border-bottom border-white">
+                    <hr width="100" class="border-bottom border-white">
                     <i class="fa-solid fa-star px-2"></i>
-                    <hr width="80" class="border-bottom border-white">
+                    <hr width="100" class="border-bottom border-white">
                 </div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut delectus eum, molestias, earum natus
                 eaque eligendi, labore nobis soluta impedit ratione incidunt voluptatum molestiae magnam optio?
@@ -104,12 +117,12 @@
             <div class="section_title text-center">
                 <h2>PORTFOLIO</h2>
                 <div class="line_star d-flex align-items-center justify-content-center">
-                    <hr width="80" class="border-bottom border-black">
+                    <hr width="100" class="border-bottom border-black">
                     <i class="fa-solid fa-star px-2"></i>
-                    <hr width="80" class="border-bottom border-black">
+                    <hr width="100" class="border-bottom border-black">
                 </div>
             </div>
-            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3 ">
+            <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3 pt-3">
                 <div class="col">
                     <div class="card rounded">
 
@@ -145,8 +158,8 @@
     </section>
     <!-- About section -->
     <section class="about py-5">
-        <div class="container">
-            <div class="section_title text-center text-white p-3">
+        <div class="container px-5">
+            <div class="section_title text-center text-white">
                 <h2>ABOUT</h2>
                 <div class="line_star d-flex align-items-center justify-content-center">
                     <!-- <span class="placeholder w-75"></span> -->
@@ -154,11 +167,41 @@
                     <i class="fa-solid fa-star px-2"></i>
                     <hr width="50" class="border-bottom border-white">
                 </div>
+                <div class="row text-start py-2 g-3">
+                    <div class="col-12 col-sm-6">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A soluta cupiditate cum nulla illum
+                            repellendus velit magnam in doloribus? Corrupti vitae magnam tempora eaque explicabo,
+                            doloribus molestias beatae dolor delectus.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A soluta cupiditate cum nulla illum
+                            repellendus velit magnam in doloribus? Corrupti vitae magnam tempora eaque explicabo,
+                            doloribus molestias beatae dolor delectus.
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-light">Download</button>
             </div>
         </div>
     </section>
     <!-- Contact section -->
-    <section class="contact"></section>
+    <section class="contact py-5">
+        <div class="container px-5">
+            <div class="section_title text-center">
+                <h2>CONTACT ME</h2>
+                <div class="line_star d-flex align-items-center justify-content-center">
+                    <hr width="100" class="border-bottom border-black">
+                    <i class="fa-solid fa-star px-2"></i>
+                    <hr width="100" class="border-bottom border-black">
+                </div>
+                <form action="#" class="pt-2">
+
+
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer></footer>
 </body>
