@@ -82,3 +82,37 @@ footer .top {
         transform: translateY(-15px);
     }
 }
+
+hr {
+    opacity: 1;
+    animation: lineopen 2s ease infinite;
+}
+
+@keyframes lineopen {
+
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 20%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.fa-star {
+    animation: rotate 2s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
