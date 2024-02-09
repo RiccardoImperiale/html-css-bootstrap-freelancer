@@ -1,0 +1,84 @@
+:root {
+    --bf-info: #1ABC9C;
+    --bf-primary: #2C3E50;
+    --bf-primary-emphasis: #3A546D;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font_xs {
+    font-size: .85rem;
+}
+
+nav,
+footer .bottom {
+    background-color: var(--bf-primary);
+}
+
+.hero,
+#about {
+    background-color: var(--bf-info);
+}
+
+#contact {
+    & button {
+        background-color: var(--bf-info);
+
+        &:hover {
+            background-color: #1ca186;
+        }
+    }
+}
+
+.image_hover i {
+    opacity: 0;
+    background-color: transparent;
+    transition: .25s;
+}
+
+.image_hover i:hover {
+    opacity: 1;
+    background-color: #1abc9c98;
+}
+
+footer .top {
+    background-color: var(--bf-primary-emphasis);
+
+    & i {
+        width: 20px;
+        height: 20px;
+    }
+
+    & a {
+        color: var(--bf-info);
+
+        &:hover {
+            color: #1dc8a6;
+        }
+    }
+}
+
+.hero_image {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}

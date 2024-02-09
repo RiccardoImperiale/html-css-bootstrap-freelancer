@@ -11,69 +11,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        :root {
-            --bf-info: #1ABC9C;
-            --bf-primary: #2C3E50;
-            --bf-primary-emphasis: #3A546D;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .font_xs {
-            font-size: .85rem;
-        }
-
-        nav,
-        footer .bottom {
-            background-color: var(--bf-primary);
-        }
-
-        .hero,
-        #about {
-            background-color: var(--bf-info);
-        }
-
-        #contact {
-            & button {
-                background-color: var(--bf-info);
-
-                &:hover {
-                    background-color: #1ca186;
-                }
-            }
-        }
-
-        .image_hover i {
-            opacity: 0;
-            background-color: transparent;
-            transition: .25s;
-        }
-
-        .image_hover i:hover {
-            opacity: 1;
-            background-color: #1abc9c98;
-        }
-
-        footer .top {
-            background-color: var(--bf-primary-emphasis);
-
-            & i {
-                width: 20px;
-                height: 20px;
-            }
-
-            & a {
-                color: var(--bf-info);
-
-                &:hover {
-                    color: #1dc8a6;
-                }
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
@@ -106,7 +44,7 @@
     <!-- Hero section -->
     <section class="hero py-5">
         <div class="container text-center pt-5">
-            <img width="150" class="m-auto" src="./img/avatar.svg" alt="">
+            <img width="150" class="m-auto hero_image" src="./assets/img/avatar.svg" alt="avatar">
             <div class="mt-3 text-white">
                 <h1>START BOOTSTRAP</h1>
                 <div class="line_star d-flex align-items-center justify-content-center pb-1">
@@ -132,42 +70,42 @@
             <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3 pt-3">
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/cabin.png" alt="log cabin">
+                        <img class="w-100 rounded" src="./assets/img/cabin.png" alt="log cabin">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/cake.png" alt="cake">
+                        <img class="w-100 rounded" src="./assets/img/cake.png" alt="cake">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/circus.png" alt="circus tent">
+                        <img class="w-100 rounded" src="./assets/img/circus.png" alt="circus tent">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/game.png" alt="game controller">
+                        <img class="w-100 rounded" src="./assets/img/game.png" alt="game controller">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/safe.png" alt="safe">
+                        <img class="w-100 rounded" src="./assets/img/safe.png" alt="safe">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="col">
                     <a href="#" class="position-relative image_hover d-block">
-                        <img class="w-100 rounded" src="./img/submarine.png" alt="submarine">
+                        <img class="w-100 rounded" src="./assets/img/submarine.png" alt="submarine">
                         <i class="position-absolute d-flex align-items-center justify-content-center rounded top-0 bottom-0 w-100 fa fa-plus text-white fs-4"
                             aria-hidden="true"></i>
                     </a>
