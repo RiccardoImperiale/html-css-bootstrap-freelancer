@@ -29,64 +29,22 @@
 
         footer .top {
             background-color: var(--bf-primary-emphasis);
+
+            & i {
+                width: 20px;
+                height: 20px;
+            }
+
+            & a {
+                color: var(--bf-info);
+
+                &:hover {
+                    color: #1dc8a6;
+                }
+            }
         }
 
 
-        .debug {
-
-            & [class^="container"] {
-                border: 1px dashed;
-            }
-
-
-            & section {
-                border: 1px dashed;
-            }
-
-            .hero {
-
-                .container div {
-                    border: 1px dashed black;
-                }
-
-                /* .hero_image {
-                    width: 200px;
-                    height: 200px;
-                } */
-            }
-
-            .portfolio {
-                .col {
-                    /* height: 200px; */
-
-
-                }
-            }
-
-            .about {
-
-
-                .col-10 {
-                    & p {
-                        background-color: blueviolet;
-                    }
-                }
-            }
-
-            & form {
-                height: 200px;
-                background-color: blueviolet;
-            }
-
-        }
-
-        .btn {
-            background-color: var(--bf-info);
-
-            &:hover {
-                background-color: #1ca186;
-            }
-        }
     </style>
 
 </head>
@@ -230,25 +188,35 @@
                     </form>
                 </div>
             </div>
-
         </div>
     </section>
-
+    <!-- Footer -->
     <footer class="text-center text-white">
         <div class="top py-5">
             <div class="container">
                 <div class="row g-5 px-1 row-cols-1 row-cols-sm-3">
                     <div class="col">
                         <h6>LOCATION</h6>
-                        Lorem ipsum dolor sit amet consectetur.
+                        2215 John Daniel Drive Clark, Mo 54243
                     </div>
                     <div class="col">
                         <h6>AROUND THE WEB</h6>
-                        Lorem ipsum dolor sit amet consectetur.
+                        <div class="social d-flex g-3 justify-content-center">
+                            <i
+                                class="fa-brands fa-facebook-f rounded-circle border border-1 p-4 d-flex align-items-center justify-content-center mx-1"></i>
+                            <i
+                                class="fa-brands fa-google-plus-g rounded-circle border border-1 p-4 d-flex align-items-center justify-content-center mx-1"></i>
+                            <i
+                                class="fa-brands fa-x-twitter rounded-circle border border-1 p-4 d-flex align-items-center justify-content-center mx-1"></i>
+                            <i
+                                class="fa-brands fa-linkedin-in border rounded-circle border-1 p-4 d-flex align-items-center justify-content-center mx-1"></i>
+                        </div>
+
                     </div>
                     <div class="col">
                         <h6>ABOUT FREELANCER</h6>
-                        Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start
+                        Freelance is a free to use, open source Bootstrap theme created by <a
+                            class="link-underline link-underline-opacity-0" href="#">Start
                             Bootstrap</a>.
                     </div>
                 </div>
