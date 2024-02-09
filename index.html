@@ -18,6 +18,10 @@
             --bf-primary-emphasis: #3A546D;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         .font_xs {
             font-size: .85rem;
         }
@@ -28,7 +32,7 @@
         }
 
         .hero,
-        .about {
+        #about {
             background-color: var(--bf-info);
         }
 
@@ -65,7 +69,7 @@
 
 <body class="">
     <header>
-        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+        <nav class="navbar position-fixed w-100 z-1 navbar-expand-md" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">START BOOTSTRAP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -76,13 +80,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto font_xs">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
+                            <a class="nav-link active" aria-current="page" href="#portfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">ABOUT</a>
+                            <a class="nav-link active" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active pe-0" href="#">CONTACT</a>
+                            <a class="nav-link pe-0 active" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -91,8 +95,8 @@
     </header>
     <!-- Hero section -->
     <section class="hero py-5">
-        <div class="container text-center">
-            <img width="150" class="m-auto " src="./img/avatar.svg" alt="">
+        <div class="container text-center pt-5">
+            <img width="150" class="m-auto" src="./img/avatar.svg" alt="">
             <div class="mt-3 text-white">
                 <h1>START BOOTSTRAP</h1>
                 <div class="line_star d-flex align-items-center justify-content-center pb-1">
@@ -105,8 +109,8 @@
         </div>
     </section>
     <!-- Portfolio section -->
-    <section class="portfolio py-5">
-        <div class="container text-center">
+    <section id="portfolio" class="py-5">
+        <div class="container text-center pt-3">
             <!-- section title -->
             <h2>PORTFOLIO</h2>
             <div class="line_star d-flex align-items-center justify-content-center">
@@ -162,8 +166,8 @@
         </div>
     </section>
     <!-- About section -->
-    <section class="about py-5">
-        <div class="container text-white text-center">
+    <section id="about" class="py-5">
+        <div class="container text-white text-center pt-3">
             <!-- section title -->
             <h2>ABOUT</h2>
             <div class="line_star d-flex align-items-center justify-content-center">
@@ -193,8 +197,8 @@
         </div>
     </section>
     <!-- Contact section -->
-    <section class="contact py-5">
-        <div class="container text-center">
+    <section id="contact" class="py-5">
+        <div class="container text-center pt-3">
             <!-- section title -->
             <h2>CONTACT ME</h2>
             <div class="line_star d-flex align-items-center justify-content-center">
